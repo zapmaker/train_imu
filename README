@@ -1,0 +1,20 @@
+                  ---- Autonomous Toy Train Controller ---
+
+Modified multiwii (multicopter) code to extract gyro z-axis information to 
+determine speed around curvers. This information is fed back into a simple
+feedback algorithm to slow down the train. 
+
+Wheel speed sensor is used to measure train speed and adjust motor controller 
+PWM to keep train speed approximately constant except for slowing down in curves.
+
+Designed for Rainbowduino to allow instant status information to be displayed
+on 8x8 RGB matrix. 
+
+Code is hardcoded for GY80 IMU. Only z-axis of gyro is currently being used
+from the IMU. Multiwii code is used because of the quality gyro filtering.
+First checked-in code represents the same code used to demonstrate the 
+train at the 2014 Seattle Mini Maker Faire.
+
+For more info zapmaker.org
+
+Code is GPL3 license per multiwii license.
